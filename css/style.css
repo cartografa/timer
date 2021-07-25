@@ -1,0 +1,60 @@
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+    font: inherit;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer {
+    margin: 0 auto;
+    position: relative;
+    display: inline-block;
+}
+
+.timer input {
+    display: block;
+    border: none;
+    width: 15rem;
+    font-size: 5.625rem;
+    text-align: center;
+    background-color: transparent;
+}
+
+.timer button {
+    border: none;
+    font-size: 2.25rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.timer button:focus,
+.timer input:focus {
+    outline: none;
+}
+
+.controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dial {
+    height: 25rem;
+    width: 25rem;
+}
